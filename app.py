@@ -7,20 +7,18 @@ import plotly.graph_objs as go
 
 x_list=['Apples', 'Pineapples', 'Grapes', 'Pears', 'Bananas']
 y_list=y=[4, 2, 8, 6, 10]
-color1 = '90ee90'
-color2 = '9370db'
-color3 = 'ffa500'
-color4 = 'C74A2F'
-color5 = 'FEC228'
+color1 = '#90ee90'
+color2 = '#9370db'
+color3 = '#ffa500'
+color4 = '#C74A2F'
+color5 = '#FEC228'
 
 data = [go.Bar(
             x=x_list,
             y=y_list,
-            marker={'colors': [color1, color2, color3, color4, color5],
-            'line': {'color': 'white', 'width': 5}}
-    
-            
-    )]
+            marker={'color': [color1, color2, color3, color, color]}
+
+)]
 
 layout = go.Layout(
     title = 'My favorite animals', # Graph title

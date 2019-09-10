@@ -5,14 +5,21 @@ import plotly.graph_objs as go
 
 ########### Set up the chart
 
-myfavoritecolor='C74A2F'
 x_list=['Apples', 'Pineapples', 'Grapes', 'Pears', 'Bananas]
 y_list=y=[4, 2, 8, 6, 10]
+color1 = '90ee90'
+color2 = '9370db'
+color3 = 'ffa500'
+color4 = 'C74A2F'
+color5 = 'FEC228'
 
 data = [go.Bar(
             x=x_list,
             y=y_list,
-            marker=dict(color=myfavoritecolor)
+            marker={'colors': [color1, color2, color3, color4, color5],
+            'line': {'color': 'white', 'width': 5}}
+    
+            
     )]
 
 layout = go.Layout(
@@ -30,12 +37,12 @@ app = dash.Dash()
 server = app.server
 
 app.layout = html.Div(children=[
-    html.H1('Animals in the Zoo'),
+    html.H1('Fruits in the Supermarket'),
     dcc.Graph(
         id='figure-1',
         figure=fig
     ),
-    html.A('Code on Github', href='https://github.com/austinlasseter/zoo-animals-dash'),
+    html.A('Code on Github', href='https://github.com/ktemsupa/fruits-supermarket-dash'),
     html.Br(),
     html.A('HTML Color Codes', href='https://htmlcolorcodes.com'),
 

@@ -11,7 +11,7 @@ color1 = '#90ee90'
 color2 = '#9370db'
 color3 = '#ffa500'
 color4 = '#C74A2F'
-color5 = '#FEC228'
+color5 = '#FEC227'
 
 data = [go.Bar(
             x=x_list,

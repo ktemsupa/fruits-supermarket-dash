@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 
 ########### Set up the chart
 
-x_list=['Apples', 'Pineapples', 'Grapes', 'Pears', 'Bananas]
+x_list=['Apples', 'Pineapples', 'Grapes', 'Pears', 'Bananas']
 y_list=y=[4, 2, 8, 6, 10]
 color1 = '90ee90'
 color2 = '9370db'

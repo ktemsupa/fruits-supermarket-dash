@@ -21,7 +21,7 @@ data = [go.Bar(
 )]
 
 layout = go.Layout(
-    title = 'My favorite animals', # Graph title
+    title = 'My Favorite Fruits', # Graph title
     xaxis = dict(title = 'Type of Fruits'), # x-axis label
     yaxis = dict(title = 'Number in Supermarket'), # y-axis label
 

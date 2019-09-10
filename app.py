@@ -16,7 +16,7 @@ color5 = '#FEC227'
 data = [go.Bar(
             x=x_list,
             y=y_list,
-            marker={'color': [color1, color2, color3, color, color]}
+            marker={'color': [color1, color2, color3, color4, color5]}
 
 )]
 
